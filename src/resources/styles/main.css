@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Montserrat&family=Mukta&family=Nunito&family=Raleway&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+.page-title {
+  padding: 70px 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: #111;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.page-content {
+  padding: 0 40px;
+}
+.card {
+  padding: 20px;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.job-req p {
+  text-align: justify;
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #111;
+  color: #fff;
+  padding: 5px 10px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.job-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.job-req {
+  text-align: justify;
+  justify-content: center;
+}
+.job-actions {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.job-actions a {
+  color: #2a2f4f;
+}
+.job-cards {
+  display: grid;
+  gap: 1;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .job-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .job-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Job Description Page Starts */
+.job-desc-head {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/bg/1567666.png);
+
+  background-size: cover;
+  padding: 80px 40px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+.job-desc-head-title {
+  font-size: 2rem;
+}
+.job-desc-head-meta {
+  font-size: 1.2rem;
+}
+.job-desc-content {
+  padding: 40px;
+}
+.job-desc-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.job-desc-content-left {
+  float: left;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 5px;
+}
+.job-desc-content-right {
+  float: left;
+  width: 30%;
+  padding: 0 20px;
+}
+@media (max-width: 800px) {
+  .job-desc-content-left,
+  .job-desc-content-right {
+    width: 100%;
+    height: auto;
+  }
+  .job-desc-content-right {
+    padding: 20px 0;
+  }
+}
+/* Job Description Page Ends */
+
+.apply-form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.apply-form-left {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.apply-form-right {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+@media (max-width: 800px) {
+  .apply-form-left,
+  .apply-form-right {
+    width: 100%;
+    height: auto;
+  }
+}
+.apply-form label {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+.apply-form input {
+  border: 1px solid #111;
+  padding: 10px;
+  width: 100%;
+  border-radius: 28px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.apply-form input:focus {
+  outline: none;
+}
+.apply-form input[type="file"] {
+  border: none;
+}
+.apply-form input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 28px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.apply-form button {
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #111;
+  font-family: "Raleway", sans-serif;
+  width: 150px;
+  margin-left: 20px;
+}
+.apply-form {
+  margin-bottom: 50px;
+}
+.w50p {
+  width: 50%;
+  margin: auto;
+}
+.center {
+  text-align: center;
+}
+.tabs button {
+  font-family: "Raleway", sans-serif;
+
+  color: #111;
+}
+.new-job-form {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.new-job-form form label {
+  font-family: "Raleway", sans-serif;
+  display: block;
+}
+.new-job-form form input {
+  border: 1px solid #111;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.new-job-form form textarea {
+  display: block;
+  border: 1px solid #111;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
